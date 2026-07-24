@@ -30,7 +30,9 @@ type csomErrorInfo struct {
 //
 // Shape: [ {header}, id1, result1, id2, result2, … ] — odd indices are action Ids,
 // even indices their results.
-func parseResponse(raw []byte, queryID int) ([]map[string]any, error) {
+// parseResults decodes a ProcessQuery response into a map of action-id → raw
+// result, after surfacing any header ErrorInfo as an *APIError.
+func parseResults(raw []byte) (map[int]json.RawMessage, error) {
 	raw = bytes.TrimSpace(raw)
 	if len(raw) == 0 {
 		return nil, nil
@@ -49,23 +51,36 @@ func parseResponse(raw []byte, queryID int) ([]map[string]any, error) {
 	if hdr.ErrorInfo != nil {
 		return nil, newCSOMError(hdr.ErrorInfo, raw)
 	}
-	if queryID == 0 {
-		return nil, nil
-	}
+	out := map[int]json.RawMessage{}
 	for i := 1; i+1 < len(arr); i += 2 {
 		var id int
 		if err := json.Unmarshal(arr[i], &id); err != nil {
 			continue // not an action-id slot; skip
 		}
-		if id == queryID {
-			var obj map[string]any
-			if err := json.Unmarshal(arr[i+1], &obj); err != nil {
-				return nil, fmt.Errorf("spoapi: decode query result: %w", err)
-			}
-			return []map[string]any{obj}, nil
-		}
+		out[id] = arr[i+1]
 	}
-	return nil, nil
+	return out, nil
+}
+
+// parseResponse returns the object produced by the <Query> action queryID (or nil
+// for a write with no read-back / a CSOM error).
+func parseResponse(raw []byte, queryID int) ([]map[string]any, error) {
+	results, err := parseResults(raw)
+	if err != nil {
+		return nil, err
+	}
+	if queryID == 0 || results == nil {
+		return nil, nil
+	}
+	rm, ok := results[queryID]
+	if !ok {
+		return nil, nil
+	}
+	var obj map[string]any
+	if err := json.Unmarshal(rm, &obj); err != nil {
+		return nil, fmt.Errorf("spoapi: decode query result: %w", err)
+	}
+	return []map[string]any{obj}, nil
 }
 
 func truncate(b []byte, n int) string {

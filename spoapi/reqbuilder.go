@@ -2,6 +2,7 @@ package spoapi
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"strings"
 )
@@ -68,6 +69,22 @@ func (b *reqBuilder) method(parent *objRef, name string, params []refParam) (*ob
 	}
 	b.objectPathAction(id)
 	return &objRef{declID: id}, nil
+}
+
+// methodAction adds a terminal <Method> action on obj and returns its id (the
+// result key) — for methods returning a scalar/list ClientResult<T>.
+func (b *reqBuilder) methodAction(obj *objRef, name string, params []Param) (int, error) {
+	ps, err := renderParams(params)
+	if err != nil {
+		return 0, err
+	}
+	id := b.next()
+	if ps == "" {
+		fmt.Fprintf(&b.actions, `<Method Name="%s" Id="%d" ObjectPathId="%d" />`, attrEscape(name), id, obj.declID)
+	} else {
+		fmt.Fprintf(&b.actions, `<Method Name="%s" Id="%d" ObjectPathId="%d">%s</Method>`, attrEscape(name), id, obj.declID, ps)
+	}
+	return id, nil
 }
 
 // setProp adds a <SetProperty> action on obj.
@@ -164,6 +181,125 @@ func (c *Client) InvokeStaticGet(ctx context.Context, cmdletName, rootTypeID, me
 	}
 	qid := b.query(obj, false)
 	return c.invokeXML(ctx, cmdletName, b.build(c.appName), qid)
+}
+
+// InvokeStaticList calls a static method returning a collection (ClientObjectList)
+// and returns its child items (e.g. Tenant.GetSiteDesignRights(id)).
+func (c *Client) InvokeStaticList(ctx context.Context, cmdletName, typeID, method string, params []Param) ([]map[string]any, error) {
+	b := newReqBuilder()
+	b.constructor(typeID)
+	obj, err := b.staticMethod(typeID, method, params)
+	if err != nil {
+		return nil, err
+	}
+	qid := b.query(obj, true)
+	raw, err := c.postXML(ctx, cmdletName, b.build(c.appName))
+	if err != nil {
+		return nil, err
+	}
+	results, err := parseResults(raw)
+	if err != nil {
+		return nil, err
+	}
+	var coll struct {
+		Child []map[string]any `json:"_Child_Items_"`
+	}
+	if rm := results[qid]; rm != nil {
+		_ = json.Unmarshal(rm, &coll)
+	}
+	return coll.Child, nil
+}
+
+// InvokeStaticVoid calls a void static method (e.g. Tenant.RevokeSiteDesignRights).
+func (c *Client) InvokeStaticVoid(ctx context.Context, cmdletName, typeID, method string, params []Param) error {
+	b := newReqBuilder()
+	b.constructor(typeID)
+	if _, err := b.staticMethod(typeID, method, params); err != nil {
+		return err
+	}
+	raw, err := c.postXML(ctx, cmdletName, b.build(c.appName))
+	if err != nil {
+		return err
+	}
+	_, err = parseResults(raw)
+	return err
+}
+
+// InvokeMethodResult calls a single method on the root object and returns its raw
+// result value — for methods returning ClientResult<T>/IList<T> (e.g.
+// Tenant.GetTenantCdnEnabled, GetOrgNewsSites). Returns nil if the method has no
+// result slot.
+func (c *Client) InvokeMethodResult(ctx context.Context, cmdletName, typeID, method string, params []Param) (json.RawMessage, error) {
+	b := newReqBuilder()
+	root := b.constructor(typeID)
+	id, err := b.methodAction(root, method, params)
+	if err != nil {
+		return nil, err
+	}
+	raw, err := c.postXML(ctx, cmdletName, b.build(c.appName))
+	if err != nil {
+		return nil, err
+	}
+	results, err := parseResults(raw)
+	if err != nil {
+		return nil, err
+	}
+	return results[id], nil
+}
+
+// MethodBool invokes a bool-returning method.
+func (c *Client) MethodBool(ctx context.Context, cmdletName, typeID, method string, params []Param) (bool, error) {
+	rm, err := c.InvokeMethodResult(ctx, cmdletName, typeID, method, params)
+	if err != nil || rm == nil {
+		return false, err
+	}
+	var b bool
+	err = json.Unmarshal(rm, &b)
+	return b, err
+}
+
+// MethodInt invokes an int/enum-returning method.
+func (c *Client) MethodInt(ctx context.Context, cmdletName, typeID, method string, params []Param) (int, error) {
+	rm, err := c.InvokeMethodResult(ctx, cmdletName, typeID, method, params)
+	if err != nil || rm == nil {
+		return 0, err
+	}
+	var n int
+	err = json.Unmarshal(rm, &n)
+	return n, err
+}
+
+// MethodString invokes a string-returning method.
+func (c *Client) MethodString(ctx context.Context, cmdletName, typeID, method string, params []Param) (string, error) {
+	rm, err := c.InvokeMethodResult(ctx, cmdletName, typeID, method, params)
+	if err != nil || rm == nil {
+		return "", err
+	}
+	var s string
+	if json.Unmarshal(rm, &s) == nil {
+		return s, nil
+	}
+	return "", nil // non-string (e.g. null) → empty
+}
+
+// MethodStrings invokes a list-returning method, accepting either a bare JSON array
+// or a CSOM collection ({_Child_Items_: [...]}).
+func (c *Client) MethodStrings(ctx context.Context, cmdletName, typeID, method string, params []Param) ([]string, error) {
+	rm, err := c.InvokeMethodResult(ctx, cmdletName, typeID, method, params)
+	if err != nil || rm == nil {
+		return nil, err
+	}
+	var arr []string
+	if json.Unmarshal(rm, &arr) == nil {
+		return arr, nil
+	}
+	var coll struct {
+		ChildItems []string `json:"_Child_Items_"`
+	}
+	if json.Unmarshal(rm, &coll) == nil {
+		return coll.ChildItems, nil
+	}
+	return nil, nil
 }
 
 func buildStaticUpdate(u StaticUpdate, appName string) (string, error) {

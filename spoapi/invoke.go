@@ -80,6 +80,20 @@ func (c *Client) Invoke(ctx context.Context, op Op) (*Result, error) {
 // invokeXML POSTs a pre-built ProcessQuery body and parses the response. queryID is
 // the <Query> action's id whose result to return (0 for none).
 func (c *Client) invokeXML(ctx context.Context, cmdletName, xml string, queryID int) (*Result, error) {
+	raw, err := c.postXML(ctx, cmdletName, xml)
+	if err != nil {
+		return nil, err
+	}
+	value, err := parseResponse(raw, queryID)
+	if err != nil {
+		return nil, err
+	}
+	return &Result{Value: value}, nil
+}
+
+// postXML sends a ProcessQuery body and returns the (decoded) response bytes,
+// mapping a non-2xx HTTP status to an APIError.
+func (c *Client) postXML(ctx context.Context, cmdletName, xml string) ([]byte, error) {
 	token, err := c.opt.Tokens.Token(ctx, c.resource)
 	if err != nil {
 		return nil, fmt.Errorf("spoapi: token: %w", err)
@@ -106,11 +120,7 @@ func (c *Client) invokeXML(ctx context.Context, cmdletName, xml string, queryID 
 	if resp.StatusCode >= 400 {
 		return nil, httpError(resp.StatusCode, raw)
 	}
-	value, err := parseResponse(raw, queryID)
-	if err != nil {
-		return nil, err
-	}
-	return &Result{Value: value}, nil
+	return raw, nil
 }
 
 // setHeaders applies the ProcessQuery request headers. The CSOM request body is

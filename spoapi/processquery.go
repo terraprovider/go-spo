@@ -53,12 +53,14 @@ type Param struct {
 	Props        []SetProp // its properties (rendered as <Property Name Type>…)
 }
 
-// PathStep is one object-returning method in the object-path chain — e.g.
-// Tenant.GetSitePropertiesByUrl(url, true) → the SiteProperties object that later
-// actions target. It becomes a <Method> object path plus its <ObjectPath> action.
+// PathStep is one object-returning step in the object-path chain — a method
+// (Tenant.GetSitePropertiesByUrl(url, true)) or, when Property is true, a property
+// navigation (Site.RootWeb). Each becomes a <Method>/<Property> object path plus its
+// <ObjectPath> action.
 type PathStep struct {
-	Method string
-	Params []Param
+	Method   string
+	Params   []Param
+	Property bool // true → <Property Name="…"> instead of <Method> (no params)
 }
 
 // MethodCall is a terminal void/scalar-returning method invocation (a <Method>
@@ -160,6 +162,10 @@ func buildRequest(op Op, appName string) (xml string, queryID int, err error) {
 	fmt.Fprintf(&paths, `<Constructor Id="%d" TypeId="%s" />`, chain[0].declID, op.TypeID)
 	for i, step := range op.Chain {
 		n := chain[i+1]
+		if step.Property {
+			fmt.Fprintf(&paths, `<Property Id="%d" ParentId="%d" Name="%s" />`, n.declID, n.parentDecl, attrEscape(step.Method))
+			continue
+		}
 		ps, e := renderParams(step.Params)
 		if e != nil {
 			return "", 0, e

@@ -19,12 +19,15 @@ go get github.com/terraprovider/go-spo
 ## Status
 
 - **`spoapi`** (CSOM transport core) — ✅ implemented, unit-tested against
-  byte-exact golden fixtures emitted by the shipped CSOM runtime. Live validation
-  pending a tenant.
+  byte-exact golden fixtures emitted by the shipped CSOM runtime, and **live-validated**
+  against a tenant with certificate auth.
 - **`spec`** (embedded derived catalog: 356 Tenant properties, 185 knobs, enums) — ✅.
-- **`cmd/gen-go`** → **`spo`** (typed bindings) — ✅ for the **tenant-settings
-  singleton** (`Get-SPOTenant` / `Set-SPOTenant`, 184 typed knobs). Site collections
-  next.
+- **`cmd/gen-go`** → **`spo`** (typed bindings) — ✅. The generated tenant/site
+  singletons (`Get-/Set-SPOTenant`, 184 typed knobs; `Get-/Set-SPOSite`) plus hand-written
+  bindings for the object surface: site scripts, site designs, list designs, themes, hub
+  sites, tenant CDN, knowledge-hub / home / org-news sites, restricted search, storage
+  entities, org-assets libraries, site-design rights and blocked page content types.
+  Create/read/update/delete round-trips are validated live where the tenant permits.
 
 ```go
 svc := spo.New(client)
