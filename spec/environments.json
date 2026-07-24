@@ -1,0 +1,48 @@
+{
+  "source": "Microsoft published national-cloud SharePoint/OneDrive + AAD endpoints (verify live). Region names from Connect-SPOService -Region (AADCrossTenantAuthenticationLocation): Default, ITAR, Germany, China, France.",
+  "note": "The SPO admin resource/audience IS the tenant admin URL itself; MSAL requests {resource}/.default. adminUrl/resource are per-tenant: https://{tenant}-admin.<spoSuffix>. authority is the AAD login host for the cloud.",
+  "productionClouds": ["Commercial", "GCCHigh", "DoD", "China"],
+  "environments": {
+    "Commercial": {
+      "region": "Default",
+      "spoSuffix": "sharepoint.com",
+      "adminHostTemplate": "{tenant}-admin.sharepoint.com",
+      "authority": "https://login.microsoftonline.com",
+      "graphHost": "graph.microsoft.com",
+      "verified": false
+    },
+    "GCCHigh": {
+      "region": "ITAR",
+      "spoSuffix": "sharepoint.us",
+      "adminHostTemplate": "{tenant}-admin.sharepoint.us",
+      "authority": "https://login.microsoftonline.us",
+      "graphHost": "graph.microsoft.us",
+      "verified": false
+    },
+    "DoD": {
+      "region": "ITAR",
+      "spoSuffix": "sharepoint-mil.us",
+      "adminHostTemplate": "{tenant}-admin.sharepoint-mil.us",
+      "authority": "https://login.microsoftonline.us",
+      "graphHost": "dod-graph.microsoft.us",
+      "verified": false
+    },
+    "China": {
+      "region": "China",
+      "spoSuffix": "sharepoint.cn",
+      "adminHostTemplate": "{tenant}-admin.sharepoint.cn",
+      "authority": "https://login.chinacloudapi.cn",
+      "graphHost": "microsoftgraph.chinacloudapi.cn",
+      "verified": false
+    },
+    "Germany": {
+      "region": "Germany",
+      "spoSuffix": "sharepoint.de",
+      "adminHostTemplate": "{tenant}-admin.sharepoint.de",
+      "authority": "https://login.microsoftonline.de",
+      "graphHost": "graph.microsoft.de",
+      "retired": true,
+      "verified": false
+    }
+  }
+}

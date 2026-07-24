@@ -1,0 +1,100 @@
+[
+  {
+    "name": "read-tenant",
+    "property": "(all)",
+    "csomType": "Query",
+    "value": "",
+    "file": "read-tenant.xml"
+  },
+  {
+    "name": "set-boolean",
+    "property": "AIBuilderEnabled",
+    "csomType": "",
+    "value": "True",
+    "file": "set-boolean.xml"
+  },
+  {
+    "name": "set-string",
+    "property": "AIBuilderDefaultPowerAppsEnvironment",
+    "csomType": "",
+    "value": "env-abc123",
+    "file": "set-string.xml"
+  },
+  {
+    "name": "set-int32",
+    "property": "EmailAttestationReAuthDays",
+    "csomType": "",
+    "value": "30",
+    "file": "set-int32.xml"
+  },
+  {
+    "name": "set-int64",
+    "property": "OneDriveStorageQuota",
+    "csomType": "",
+    "value": "1048576",
+    "file": "set-int64.xml"
+  },
+  {
+    "name": "set-enum",
+    "property": "SharingCapability",
+    "csomType": "",
+    "value": "ExternalUserSharingOnly",
+    "file": "set-enum.xml"
+  },
+  {
+    "name": "set-guid",
+    "property": "AllOrganizationSecurityGroupId",
+    "csomType": "",
+    "value": "11111111-2222-3333-4444-555555555555",
+    "file": "set-guid.xml"
+  },
+  {
+    "name": "set-array-guid",
+    "property": "AllowedDomainListForSyncClient",
+    "csomType": "Array",
+    "value": "guid[2]",
+    "file": "set-array-guid.xml"
+  },
+  {
+    "name": "op-site-get",
+    "property": "GetSitePropertiesByUrl",
+    "csomType": "method-path",
+    "value": "",
+    "file": "op-site-get.xml"
+  },
+  {
+    "name": "op-site-set",
+    "property": "Update",
+    "csomType": "method-path+setprop+method",
+    "value": "",
+    "file": "op-site-set.xml"
+  },
+  {
+    "name": "op-site-remove",
+    "property": "RemoveSite",
+    "csomType": "method-action-objpath",
+    "value": "",
+    "file": "op-site-remove.xml"
+  },
+  {
+    "name": "op-site-list",
+    "property": "GetSiteProperties",
+    "csomType": "method-path+childitemquery",
+    "value": "",
+    "file": "op-site-list.xml"
+  },
+  {
+    "name": "op-site-create",
+    "property": "CreateSite",
+    "csomType": "method-action+objectparam",
+    "value": "",
+    "file": "op-site-create.xml"
+  },
+  {
+    "name": "op-theme-add",
+    "property": "AddTenantTheme",
+    "csomType": "method-action+params",
+    "value": "",
+    "file": "op-theme-add.xml"
+  }
+]

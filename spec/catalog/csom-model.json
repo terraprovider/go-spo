@@ -1,0 +1,5114 @@
+{
+  "source": "SharePoint CSOM object model (reflection of module/Microsoft.Online.SharePoint.PowerShell)",
+  "generatedFrom": "extract-csom-model.ps1",
+  "types": {
+    "Microsoft.Online.SharePoint.TenantAdministration.Tenant": {
+      "shortName": "Tenant",
+      "propertyCount": 356,
+      "properties": [
+        {
+          "name": "AddressbarLinkPermission",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AIBuilderDefaultPowerAppsEnvironment",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AIBuilderEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AIBuilderEnabledInContentCenter",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AIBuilderSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "AIBuilderSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AIBuilderSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllOrganizationSecurityGroupId",
+          "netType": "System.Guid",
+          "csomType": "Guid",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowAnonymousMeetingParticipantsToAccessWhiteboards",
+          "netType": "Microsoft.SharePoint.Client.SharingState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowAppsBypassOfUnmanagedDevicePolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowClassicPublishingSiteCreation",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowCommentsTextOnEmailEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowDownloadingNonWebViewableFiles",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowedDomainListForSyncClient",
+          "netType": "System.Collections.Generic.IList`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowEditing",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowEveryoneExceptExternalUsersClaimInPrivateSite",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowFileArchive",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowFileArchiveOnNewSitesByDefault",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowGuestUserShareToUsersNotInSiteCollection",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowLegacyAuthProtocolsEnabledSetting",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowLegacyBrowserAuthProtocolsEnabledSetting",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowLimitedAccessOnUnmanagedDevices",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowOverrideForBlockUserInfoVisibility",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowSelectSecurityGroupsInSPSitesList",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowSelectSGsInODBListInTenant",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowSensitivityLabelOnRecords",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowSharingOutsideRestrictedAccessControlGroups",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AmplifyAdminSettings",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AnyoneLinkTrackUsers",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AppAccessInformationBarriersAllowList",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AppBypassInformationBarriers",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ApplyAppEnforcedRestrictionsToAdHocRecipients",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AppOnlyBypassPeoplePickerPolicies",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ArchivedFileStorageUsageMB",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ArchiveRedirectUrl",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AuthContextResilienceMode",
+          "netType": "Microsoft.SharePoint.Administration.SPResilienceModeType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AutofillColumnsCustomModelEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AutofillColumnsCustomModelSettings",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.SharePoint.Client.SyntexCustomModelSetting, Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.SharePoint.Client.SyntexCustomModelSetting",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "AutofillColumnsEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AutofillColumnsSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "AutofillColumnsSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AutofillColumnsSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BaselineSecurityModeThirdPartyAppHPA",
+          "netType": "Microsoft.SharePoint.AuthPolicy.BaselineSecurityModeThirdPartyAppHPASetting",
+          "csomType": "Microsoft.SharePoint.AuthPolicy.BaselineSecurityModeThirdPartyAppHPASetting",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BccExternalSharingInvitations",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BccExternalSharingInvitationsList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockAccessOnUnmanagedDevices",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockAppAccessWithAuthenticationContext",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadFileTypeIds",
+          "netType": "Microsoft.SharePoint.Client.Administration.SPBlockDownloadFileTypeId[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Enum",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "BlockDownloadFileTypePolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "BlockDownloadLinksFileType",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.BlockDownloadLinksFileTypes",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadOfAllFilesForGuests",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadOfAllFilesOnUnmanagedDevices",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadOfViewableFilesForGuests",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadOfViewableFilesOnUnmanagedDevices",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockMacSync",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockSendLabelMismatchEmail",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockUserInfoVisibility",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockUserInfoVisibilityInOneDrive",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.TenantBrowseUserInfoPolicyValue",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockUserInfoVisibilityInSharePoint",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.TenantBrowseUserInfoPolicyValue",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BonusStorageQuotaMB",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "BusinessConnectivityServiceDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ClassicPagesRestrictMode",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CommentsOnFilesDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CommentsOnListItemsDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CommentsOnSitePagesDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CompatibilityRange",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ConditionalAccessPolicy",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SPOConditionalAccessPolicyType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ConditionalAccessPolicyErrorHelpLink",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ContentSecurityPolicyConfigSynced",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ContentSecurityPolicyEnforcement",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ContentTypeSyncSiteTemplatesList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreBlockGuestsAsSiteAdmin",
+          "netType": "Microsoft.SharePoint.Client.SharingState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreDefaultLinkToExistingAccess",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreDefaultShareLinkRole",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreDefaultShareLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.SharingScope",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreLoopDefaultSharingLinkRole",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreLoopDefaultSharingLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.SharingScope",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreLoopSharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreOrganizationSharingLinkMaxExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreOrganizationSharingLinkRecommendedExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreRequestFilesLinkEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreRequestFilesLinkExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CoreSharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CustomizedExternalSharingServiceUrl",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CustomScriptsRestrictMode",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DataverseUsageConsentEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultContentCenterSite",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "csomType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultLinkPermission",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingPermissionType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultODBMode",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultSharingLinkType",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingLinkType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DelayContentSecurityPolicyEnforcement",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DelayDenyAddAndCustomizePagesEnforcement",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "DelayDenyAddAndCustomizePagesEnforcementOnClassicPublishingSites",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DelegateRestrictedAccessControlConfiguration",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DelegateRestrictedContentDiscoveryConfiguration",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DenySelectSecurityGroupsInSPSitesList",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DenySelectSGsInODBListInTenant",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableAddToOneDrive",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableBackToClassic",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableCustomAppAuthentication",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisabledAdaptiveCardExtensionIds",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisabledModernListTemplateIds",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableDocumentLibraryDefaultLabeling",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisabledWebPartIds",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableOutlookPSTVersionTrimming",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisablePersonalListCreation",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableReportProblemDialog",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableSharePointStoreAccess",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableSpacesActivation",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableSpfxTopBottomPlaceholdersInElevatedContent",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableTeamsMeetingRecordingDeletedNotification",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableVivaConnectionsAnalytics",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisallowInfectedFileDownload",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisplayNamesOfFileViewers",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisplayNamesOfFileViewersInSpo",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisplayStartASiteOption",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DocumentUnderstandingEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DocumentUnderstandingEnabledInContentCenter",
+          "netType": "Microsoft.SharePoint.Client.Utilities.SyntexSiteScopeContentCenterMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DocumentUnderstandingSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "DocumentUnderstandingSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DocumentUnderstandingSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EmailAttestationEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EmailAttestationReAuthDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EmailAttestationRequired",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableAgentWorkerSharingDisclaimer",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableAIPIntegration",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableAutoExpirationVersionTrim",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "EnableAutoNewsDigest",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableAzureADB2BIntegration",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnabledFlightAllowAADB2BSkipCheckingOTP",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "EnableDirectToCustomerBilling",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableDiscoverableByOrganizationForVideos",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableGuestSignInAcceleration",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableMediaReactions",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableMinimumVersionRequirement",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableMipSiteLabel",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableNotificationsSubscriptions",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnablePromotedFileHandlers",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableRestrictedAccessControl",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableSensitivityLabelForOneNote",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableSensitivityLabelForPDF",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableSensitivityLabelForVideoFiles",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableSiteArchive",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableTenantRestrictionsInsights",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnforceRequestDigest",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ESignatureAppList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ESignatureEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ESignatureSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ESignatureSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ESignatureSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ESignatureThirdPartyProviderInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ESignatureThirdPartyProviderList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ESignatureThirdPartyProviderListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExcludedBlockDownloadGroupIds",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ExcludedFileExtensionsForSyncClient",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExemptNativeUsersFromTenantLevelRestricedAccessControl",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExpireVersionsAfterDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ExtendPermissionsToUnprotectedFiles",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExternalServicesEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExternalUserExpirationRequired",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExternalUserExpireInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "FileAnonymousLinkType",
+          "netType": "Microsoft.SharePoint.Client.AnonymousLinkType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "FilePickerExternalImageSearchEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "FilePreviewAllowedDomainList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "FileVersionPolicyXml",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "FolderAnonymousLinkType",
+          "netType": "Microsoft.SharePoint.Client.AnonymousLinkType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "GuestSharingGroupAllowListInTenant",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "GuestSharingGroupAllowListInTenantByGroupId",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "GuestSharingGroupAllowListInTenantByPrincipalIdentity",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HardDeprecationRPSEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "HasAdminCompletedCUConfiguration",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HasIntelligentContentServicesCapability",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HasTopicExperiencesCapability",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HideDefaultThemes",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HideSyncButtonOnDocLib",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HideSyncButtonOnODB",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IBImplicitGroupBased",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ImageTaggingOption",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.ImageTaggingChoice",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ImageTaggingSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ImageTaggingSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ImageTaggingSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IncludeAtAGlanceInShareEmails",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "InformationBarriersSuspension",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IPAddressAllowList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IPAddressEnforcement",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IPAddressWACTokenLifetime",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsAppBarTemporarilyDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsCollabMeetingNotesFluidEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsDataAccessInCardDesignerEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsEnableAppAuthPopUpEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsFilePreviewDomainRestrictionEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsFluidEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsHubSitesMultiGeoFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsLoopEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsMnAFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsMultiGeo",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsMultipleHomeSitesFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsMultipleVivaConnectionsFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsOnlyCertifiedAppsAllowed",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsSelfServiceContainerTypeManagementEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsUnmanagedSyncClientForTenantRestricted",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsUnmanagedSyncClientRestrictionFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsVivaHomeFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsVivaHomeGAFlightEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsWBFluidEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "KnowledgeAgentEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "KnowledgeAgentScopeMode",
+          "netType": "Microsoft.SharePoint.Client.Utilities.KnowledgeAgentScopeMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "KnowledgeAgentSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "KnowledgeAgentSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "KnowledgeAgentSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LabelMismatchEmailHelpLink",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LegacyAuthProtocolsEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LegacyBrowserAuthProtocolsEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LimitedAccessFileType",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SPOLimitedAccessFileType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "M365AdditionalStorageSPOEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "M365SharePointStorageEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "MachineLearningCaptureEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MajorVersionLimit",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MarkAllFilesAsSensitiveByDefault",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "MarkNewFilesSensitiveByDefault",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SensitiveByDefaultState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MassDeleteNotificationDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MassDeleteNotificationDisabledForODB",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MassDeleteNotificationDisabledForSPO",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MediaTranscription",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.MediaTranscriptionPolicyType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MediaTranscriptionAutomaticFeatures",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.MediaTranscriptionAutomaticFeaturesPolicyType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MobileFriendlyUrlEnabledInTenant",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "NewSharePointExperienceOptIn",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "NoAccessRedirectUrl",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "NotificationsInOneDriveForBusinessEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "NotificationsInSharePointEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "NotifyOwnersWhenInvitationsAccepted",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "NotifyOwnersWhenItemsReshared",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRAdminODBGroupList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRAdminODBUserList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRAdminSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "OCRAdminSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRAdminSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRComplianceODBGroupList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRComplianceODBUserList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRComplianceSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "OCRComplianceSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRComplianceSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRModeForAdminODBs",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.ObjectCharacterRecognitionMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRModeForAdminSites",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.ObjectCharacterRecognitionMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRModeForComplianceODBs",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.ObjectCharacterRecognitionMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OCRModeForComplianceSites",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.ObjectCharacterRecognitionMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ODBAccessRequests",
+          "netType": "Microsoft.SharePoint.Client.SharingState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ODBMembersCanShare",
+          "netType": "Microsoft.SharePoint.Client.SharingState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ODBSensitivityRefreshWindowInHours",
+          "netType": "System.UInt16",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ODBSharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ODBTranslationEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OfficeClientADALDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveBlockGuestsAsSiteAdmin",
+          "netType": "Microsoft.SharePoint.Client.SharingState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveDefaultLinkToExistingAccess",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveDefaultShareLinkRole",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveDefaultShareLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.SharingScope",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveForGuestsEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveLoopDefaultSharingLinkRole",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveLoopDefaultSharingLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.SharingScope",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveLoopSharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveOrganizationSharingLinkMaxExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveOrganizationSharingLinkRecommendedExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveRequestFilesLinkEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveRequestFilesLinkExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OneDriveStorageQuota",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OptOutOfGrooveBlock",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OptOutOfGrooveSoftBlock",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OrgNewsSiteUrl",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "OrphanedPersonalSitesRetentionPeriod",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OwnerAnonymousNotification",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PermissiveBrowserFileHandlingOverride",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PrebuiltEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PrebuiltEnabledInContentCenter",
+          "netType": "Microsoft.SharePoint.Client.Utilities.SyntexSiteScopeContentCenterMode",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PrebuiltSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "PrebuiltSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PrebuiltSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PreventExternalUsersFromResharing",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ProvisionSharedWithEveryoneFolder",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PublicCdnAllowedFileTypes",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PublicCdnEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "PublicCdnOrigins",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "RecycleBinRetentionPeriod",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ReduceTempTokenLifetimeEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ReduceTempTokenLifetimeValue",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RequireAcceptingAccountMatchInvitedAccount",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RequireAnonymousLinksExpireInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ResourceQuota",
+          "netType": "System.Double",
+          "csomType": "Double",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ResourceQuotaAllocated",
+          "netType": "System.Double",
+          "csomType": "Double",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "RestrictedAccessControlForOneDriveErrorHelpLink",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedAccessControlforSitesErrorHelpLink",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedOneDriveLicense",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "RestrictedSharePointLicense",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "RestrictExternalSharing",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictExternalSharingForAgents",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictResourceAccountAccess",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RootSiteUrl",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SearchResolveExactEmailOrUPN",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SelfServiceSiteCreationDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharePointAddInsBlocked",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharePointAddInsDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingAllowedDomainList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingBlockedDomainList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingDomainRestrictionMode",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingDomainRestrictionModes",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowAllUsersClaim",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowEveryoneClaim",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowEveryoneExceptExternalUsersClaim",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowNGSCDialogForSyncOnODB",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowOpenInDesktopOptionForSyncedFiles",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowPeoplePickerGroupSuggestionsForIB",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ShowPeoplePickerSuggestionsForGuestUsers",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SignInAccelerationDomain",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SiteOwnerManageLegacyServicePrincipalEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SiteOwnersCanAccessMissingContent",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SocialBarOnSitePagesDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SpecialCharactersStateInFileFolderNames",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SpecialCharactersState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SPJitDlpPolicyData",
+          "netType": "Microsoft.SharePoint.AuthPolicy.SPJitDlpPolicyData",
+          "csomType": "Microsoft.SharePoint.AuthPolicy.SPJitDlpPolicyData",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StartASiteFormUrl",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "StopAlerts",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "StopNew2010Workflows",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "StopNew2013Workflows",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "StorageQuota",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StorageQuotaAllocated",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StreamLaunchConfig",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "StreamLaunchConfigLastUpdated",
+          "netType": "System.DateTime",
+          "csomType": "DateTime",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StreamLaunchConfigUpdateCount",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SyncPrivacyProfileProperties",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SyntexBillingSubscriptionSettings",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexBillingContext",
+          "csomType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexBillingContext",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SyntexInternalFeatureFlags",
+          "netType": "System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.Boolean, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SyntexMediaAnalyticsSettings",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexPremiumFeatureSettings",
+          "csomType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexPremiumFeatureSettings",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SyntexPaygFeatureActivations",
+          "netType": "System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "System.Collections.Generic.IDictionary`2[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SyntexPlaybackTranscriptTranslationSettings",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexPremiumFeatureSettings",
+          "csomType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexPremiumFeatureSettings",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SyntexPowerAppsEnvironmentsContext",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexPowerAppsEnvironmentsContext",
+          "csomType": "Microsoft.Online.SharePoint.TenantAdministration.SyntexPowerAppsEnvironmentsContext",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "TaxonomyTaggingEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TaxonomyTaggingSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "TaxonomyTaggingSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TaxonomyTaggingSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TenantDataLossPreventionQuarantineSettings",
+          "netType": "Microsoft.SharePoint.Client.TenantDataLossPreventionQuarantineSettings",
+          "csomType": "Microsoft.SharePoint.Client.TenantDataLossPreventionQuarantineSettings",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "TlsTokenBindingPolicyValue",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SPOTlsTokenBindingPolicyValue",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TranslationEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TranslationSiteInfoList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker, Microsoft.Online.SharePoint.Client.Tenant, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SiteInfoForSitePicker",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "TranslationSiteList",
+          "netType": "System.Collections.Generic.IEnumerable`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TranslationSiteListFileName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "UniversalAnnotationDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "UnlicensedOdbSyntexBillingEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "UseFindPeopleInPeoplePicker",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "UsePersistentCookiesForExplorerView",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "VersionPolicyFileTypeOverride",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SPOFileVersionFileTypePolicySettings[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SPOFileVersionFileTypePolicySettings",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ViewersCanCommentOnMediaDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ViewInFileExplorerEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "WhoCanShareAllowListInTenant",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "WhoCanShareAllowListInTenantByGroupId",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "WhoCanShareAllowListInTenantByPrincipalIdentity",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Workflow2010Disabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Workflows2013State",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.Workflows2013State",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        }
+      ]
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.SiteProperties": {
+      "shortName": "SiteProperties",
+      "propertyCount": 135,
+      "properties": [
+        {
+          "name": "AllowDownloadingNonWebViewableFiles",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowEditing",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowFileArchive",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowSelfServiceUpgrade",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AllowWebPropertyBagUpdateWhenDenyAddAndCustomizePagesIsEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AnonymousLinkExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ApplyToExistingDocumentLibraries",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ApplyToNewDocumentLibraries",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ArchivedBy",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ArchivedFileDiskUsed",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ArchivedTime",
+          "netType": "System.DateTime",
+          "csomType": "DateTime",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ArchiveStatus",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "AuthContextStrength",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AuthenticationContextLimitedAccess",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AuthenticationContextName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "AverageResourceUsage",
+          "netType": "System.Double",
+          "csomType": "Double",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "BlockDownloadLinksFileType",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.BlockDownloadLinksFileTypes",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadMicrosoft365GroupIds",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadPolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockDownloadPolicyFileTypeIds",
+          "netType": "System.Collections.Generic.IList`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BlockGuestsAsSiteAdmin",
+          "netType": "Microsoft.SharePoint.Client.SharingState",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "BonusDiskQuota",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ClearGroupId",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ClearRestrictedAccessControl",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CommentsOnSitePagesDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CompatibilityLevel",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ConditionalAccessPolicy",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SPOConditionalAccessPolicyType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "CreatedTime",
+          "netType": "System.DateTime",
+          "csomType": "DateTime",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "CurrentResourceUsage",
+          "netType": "System.Double",
+          "csomType": "Double",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "DefaultLinkPermission",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingPermissionType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultLinkToExistingAccess",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultLinkToExistingAccessReset",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultMainLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.MainLinkAudience",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultShareLinkRole",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultShareLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.SharingScope",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DefaultSharingLinkType",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingLinkType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DenyAddAndCustomizePages",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.DenyAddAndCustomizePagesStatus",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Description",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "DisableAppViews",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.AppViewsPolicy",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableClassicPageBaselineSecurityMode",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableCompanyWideSharingLinks",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.CompanyWideSharingLinksPolicy",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableFlows",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.FlowsPolicy",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "DisableSiteBranding",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "EnableAutoExpirationVersionTrim",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExcludeBlockDownloadPolicySiteOwners",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExcludeBlockDownloadSharePointGroups",
+          "netType": "System.String[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExcludedBlockDownloadGroupIds",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExpireVersionsAfterDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ExternalUserExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "FileTypesForVersionExpiration",
+          "netType": "System.String[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "GroupId",
+          "netType": "System.Guid",
+          "csomType": "Guid",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "GroupOwnerLoginName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "HasHolds",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "HidePeoplePreviewingFiles",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HidePeopleWhoHaveListsOpen",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "HubSiteId",
+          "netType": "System.Guid",
+          "csomType": "Guid",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IBMode",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IBSegments",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IBSegmentsToAdd",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IBSegmentsToRemove",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "InheritVersionPolicyFromTenant",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsAuthoritative",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "IsGroupOwnerSiteAdmin",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsHubSite",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsTeamsChannelConnected",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "IsTeamsConnected",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "LastContentModifiedDate",
+          "netType": "System.DateTime",
+          "csomType": "DateTime",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "Lcid",
+          "netType": "System.UInt32",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LimitedAccessFileType",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SPOLimitedAccessFileType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ListsShowHeaderAndNavigation",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LockIssue",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "LockReason",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LockState",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LoopDefaultSharingLinkRole",
+          "netType": "Microsoft.SharePoint.Client.Sharing.Role",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "LoopDefaultSharingLinkScope",
+          "netType": "Microsoft.SharePoint.Client.Sharing.SharingScope",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MajorVersionLimit",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MajorWithMinorVersionsLimit",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "MediaTranscription",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.MediaTranscriptionPolicyType",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OrganizationLinkMaxExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OrganizationLinkRecommendedExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OverrideBlockUserInfoVisibility",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SiteUserInfoVisibilityPolicyValue",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OverrideSharingCapability",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OverrideTenantAnonymousLinkExpirationPolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OverrideTenantExternalUserExpirationPolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OverrideTenantOrganizationLinkExpirationPolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Owner",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "OwnerEmail",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "OwnerLoginName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "OwnerName",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "PWAEnabled",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.PWAEnabledStatus",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ReadOnlyAccessPolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ReadOnlyForBlockDownloadPolicy",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "ReadOnlyForUnmanagedDevices",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RelatedGroupId",
+          "netType": "System.Guid",
+          "csomType": "Guid",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "RemoveVersionExpirationFileTypeOverride",
+          "netType": "System.String[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "String",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RequestFilesLinkEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RequestFilesLinkExpirationInDays",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictContentOrgWideSearch",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedAccessControl",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedAccessControlGroups",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedAccessControlGroupsToAdd",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedAccessControlGroupsToRemove",
+          "netType": "System.Guid[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Guid",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedContentDiscoveryforCopilotAndAgents",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "RestrictedToRegion",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.RestrictedToRegion",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SandboxedCodeActivationCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SandboxedCodeActivationCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SensitivityLabel",
+          "netType": "System.Guid",
+          "csomType": "Guid",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SensitivityLabel2",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SetOwnerWithoutUpdatingSecondaryAdmin",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingAllowedDomainList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingBlockedDomainList",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingDomainRestrictionMode",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingDomainRestrictionModes",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SharingLockDownCanBeCleared",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SharingLockDownEnabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "ShowPeoplePickerSuggestionsForGuestUsers",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "SiteDefinedSharingCapability",
+          "netType": "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SiteId",
+          "netType": "System.Guid",
+          "csomType": "Guid",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "SocialBarOnSitePagesDisabled",
+          "netType": "System.Boolean",
+          "csomType": "Boolean",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Status",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StorageMaximumLevel",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "StorageQuotaType",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StorageUsage",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "StorageWarningLevel",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TeamsChannelType",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.TeamsChannelTypeValue",
+          "csomType": "Enum",
+          "isEnum": true,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "Template",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TimeZoneId",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Title",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "TitleTranslations",
+          "netType": "System.Collections.Generic.IEnumerable`1[[Microsoft.SharePoint.Client.SPResourceEntry, Microsoft.SharePoint.Client, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c]]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.SharePoint.Client.SPResourceEntry",
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "Url",
+          "netType": "System.String",
+          "csomType": "String",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "UserCodeMaximumLevel",
+          "netType": "System.Double",
+          "csomType": "Double",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "UserCodeWarningLevel",
+          "netType": "System.Double",
+          "csomType": "Double",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": true
+        },
+        {
+          "name": "VersionCount",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "VersionPolicyFileTypeOverride",
+          "netType": "Microsoft.Online.SharePoint.TenantAdministration.SPOFileVersionFileTypePolicySettings[]",
+          "csomType": "Array",
+          "isEnum": false,
+          "isCollection": true,
+          "elementType": "Microsoft.Online.SharePoint.TenantAdministration.SPOFileVersionFileTypePolicySettings",
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "VersionSize",
+          "netType": "System.Int64",
+          "csomType": "Int64",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        },
+        {
+          "name": "WebsCount",
+          "netType": "System.Int32",
+          "csomType": "Int32",
+          "isEnum": false,
+          "isCollection": false,
+          "elementType": null,
+          "readable": true,
+          "settable": false
+        }
+      ]
+    }
+  },
+  "enums": {
+    "Microsoft.SharePoint.Client.Sharing.Role": {
+      "None": 0,
+      "View": 1,
+      "Edit": 2,
+      "Owner": 3,
+      "LimitedView": 4,
+      "LimitedEdit": 5,
+      "Review": 6,
+      "RestrictedView": 7,
+      "Submit": 8,
+      "ManageList": 9
+    },
+    "Microsoft.SharePoint.Client.SharingState": {
+      "Unspecified": 0,
+      "On": 1,
+      "Off": 2
+    },
+    "Microsoft.SharePoint.Administration.SPResilienceModeType": {
+      "DefaultAAD": 0,
+      "Enabled": 1,
+      "Disabled": 2
+    },
+    "Microsoft.SharePoint.Client.Administration.SPBlockDownloadFileTypeId": {
+      "TeamsMeetingRecording": 1
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.BlockDownloadLinksFileTypes": {
+      "WebPreviewableFiles": 1,
+      "ServerRenderedFilesOnly": 2
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.TenantBrowseUserInfoPolicyValue": {
+      "ApplyToNoUsers": 0,
+      "ApplyToGuestAndExternalUsers": 1,
+      "ApplyToInternalUsers": 2,
+      "ApplyToAllUsers": 3
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SPOConditionalAccessPolicyType": {
+      "AllowFullAccess": 0,
+      "AllowLimitedAccess": 1,
+      "BlockAccess": 2,
+      "AuthenticationContext": 3
+    },
+    "Microsoft.SharePoint.Client.Sharing.SharingScope": {
+      "Anyone": 0,
+      "Organization": 1,
+      "SpecificPeople": 2,
+      "Uninitialized": -1
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SharingCapabilities": {
+      "Disabled": 0,
+      "ExternalUserSharingOnly": 1,
+      "ExternalUserAndGuestSharing": 2,
+      "ExistingExternalUserSharingOnly": 3
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SharingPermissionType": {
+      "None": 0,
+      "View": 1,
+      "Edit": 2
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SharingLinkType": {
+      "None": 0,
+      "Direct": 1,
+      "Internal": 2,
+      "AnonymousAccess": 3
+    },
+    "Microsoft.SharePoint.Client.Utilities.SyntexSiteScopeContentCenterMode": {
+      "Unset": 0,
+      "Enabled": 1,
+      "Disabled": 2
+    },
+    "Microsoft.SharePoint.Client.AnonymousLinkType": {
+      "None": 0,
+      "View": 1,
+      "Edit": 2,
+      "ViewUpload": 3
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.ImageTaggingChoice": {
+      "Disabled": 0,
+      "Basic": 1,
+      "Enhanced": 2
+    },
+    "Microsoft.SharePoint.Client.Utilities.KnowledgeAgentScopeMode": {
+      "None": 0,
+      "InclusionList": 1,
+      "ExclusionList": 2
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SPOLimitedAccessFileType": {
+      "OfficeOnlineFilesOnly": 0,
+      "WebPreviewableFiles": 1,
+      "OtherFiles": 2
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SensitiveByDefaultState": {
+      "AllowExternalSharing": 0,
+      "BlockExternalSharing": 1
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.MediaTranscriptionPolicyType": {
+      "Enabled": 0,
+      "Disabled": 1
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.MediaTranscriptionAutomaticFeaturesPolicyType": {
+      "Enabled": 0,
+      "Disabled": 1
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.ObjectCharacterRecognitionMode": {
+      "Disabled": 0,
+      "InclusionList": 1,
+      "ExclusionList": 2
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SharingDomainRestrictionModes": {
+      "None": 0,
+      "AllowList": 1,
+      "BlockList": 2
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SpecialCharactersState": {
+      "NoPreference": 0,
+      "Allowed": 1,
+      "Disallowed": 2
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.SPOTlsTokenBindingPolicyValue": {
+      "None": 0,
+      "Audit": 1,
+      "PassiveEnforcement": 2,
+      "StrictEnforcement": 3
+    },
+    "Microsoft.Online.SharePoint.TenantManagement.Workflows2013State": {
+      "Disabled": 0,
+      "Configuring": 1,
+      "Enabled": 2,
+      "Retired": 3
+    },
+    "Microsoft.SharePoint.Client.Sharing.MainLinkAudience": {
+      "OnlyPeopleAdded": 1,
+      "Organization": 8,
+      "Anyone": 16
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.DenyAddAndCustomizePagesStatus": {
+      "Unknown": 0,
+      "Disabled": 1,
+      "Enabled": 2
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.AppViewsPolicy": {
+      "Unknown": 0,
+      "Disabled": 1,
+      "NotDisabled": 2
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.CompanyWideSharingLinksPolicy": {
+      "Unknown": 0,
+      "Disabled": 1,
+      "NotDisabled": 2
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.FlowsPolicy": {
+      "Unknown": 0,
+      "Disabled": 1,
+      "NotDisabled": 2
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.SiteUserInfoVisibilityPolicyValue": {
+      "OrganizationDefault": 0,
+      "ApplyToNoUsers": 1,
+      "ApplyToGuestAndExternalUsers": 2,
+      "ApplyToInternalUsers": 3,
+      "ApplyToAllUsers": 4
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.PWAEnabledStatus": {
+      "Unknown": 0,
+      "Disabled": 1,
+      "Enabled": 2
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.RestrictedToRegion": {
+      "NoRestriction": 0,
+      "BlockMoveOnly": 1,
+      "BlockFull": 2,
+      "Unknown": 3
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.SandboxedCodeActivationCapabilities": {
+      "Unknown": 0,
+      "Check": 1,
+      "Disabled": 2,
+      "Enabled": 3
+    },
+    "Microsoft.Online.SharePoint.TenantAdministration.TeamsChannelTypeValue": {
+      "None": 0,
+      "PrivateChannel": 1,
+      "SharedChannel": 2,
+      "StandardChannel": 3
+    }
+  }
+}

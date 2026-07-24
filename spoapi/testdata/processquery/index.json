@@ -1,0 +1,58 @@
+[
+  {
+    "name": "read-tenant",
+    "property": "(all)",
+    "csomType": "Query",
+    "value": "",
+    "file": "read-tenant.xml"
+  },
+  {
+    "name": "set-boolean",
+    "property": "AIBuilderEnabled",
+    "csomType": "",
+    "value": "True",
+    "file": "set-boolean.xml"
+  },
+  {
+    "name": "set-string",
+    "property": "AIBuilderDefaultPowerAppsEnvironment",
+    "csomType": "",
+    "value": "env-abc123",
+    "file": "set-string.xml"
+  },
+  {
+    "name": "set-int32",
+    "property": "EmailAttestationReAuthDays",
+    "csomType": "",
+    "value": "30",
+    "file": "set-int32.xml"
+  },
+  {
+    "name": "set-int64",
+    "property": "OneDriveStorageQuota",
+    "csomType": "",
+    "value": "1048576",
+    "file": "set-int64.xml"
+  },
+  {
+    "name": "set-enum",
+    "property": "SharingCapability",
+    "csomType": "",
+    "value": "ExternalUserSharingOnly",
+    "file": "set-enum.xml"
+  },
+  {
+    "name": "set-guid",
+    "property": "AllOrganizationSecurityGroupId",
+    "csomType": "",
+    "value": "11111111-2222-3333-4444-555555555555",
+    "file": "set-guid.xml"
+  },
+  {
+    "name": "set-array-guid",
+    "property": "AllowedDomainListForSyncClient",
+    "csomType": "Array",
+    "value": "guid[2]",
+    "file": "set-array-guid.xml"
+  }
+]
