@@ -1,7 +1,7 @@
 github.com/AzureAD/microsoft-authentication-library-for-go v1.9.0 h1:MDT4FxAPve5FnYn6vOL1r7RCRDG+l9cI7a5LlCuHsqA=
 github.com/AzureAD/microsoft-authentication-library-for-go v1.9.0/go.mod h1:Y33QHnf0FfdVewFFISOGe20mkZbxX4H839o955/PoeI=
-github.com/andybalholm/brotli v1.2.4 h1:649LN6qF+/7JJYNN3Wdu4Dt5PS6eC/yP/Go3Bb0/AHI=
-github.com/andybalholm/brotli v1.2.4/go.mod h1:rzTDkvFWvIrjDXZHkuS16NPggd91W3kUSvPlQ1pLaKY=
+github.com/andybalholm/brotli v1.2.8 h1:H9F6r7RNwzSRsx/lytpIYkbjNFMt2yNBwsJ2+0gpx78=
+github.com/andybalholm/brotli v1.2.8/go.mod h1:rzTDkvFWvIrjDXZHkuS16NPggd91W3kUSvPlQ1pLaKY=
 github.com/golang-jwt/jwt/v5 v5.3.1 h1:kYf81DTWFe7t+1VvL7eS+jKFVWaUnK9cB1qbwn63YCY=
 github.com/golang-jwt/jwt/v5 v5.3.1/go.mod h1:fxCRLWMO43lRc8nhHWY6LGqRcf+1gQWArsqaEUEa5bE=
 github.com/google/uuid v1.6.0 h1:NIvaJDMOsjHA8n1jAhLSgzrAzy1Hgr+hNrb57e+94F0=
@@ -10,8 +10,8 @@ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c h1:+mdjkGKdHQG3305AYmdv1U2eRNDiU2ErMBj1gwrq8eQ=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c/go.mod h1:7rwL4CYBLnjLxUqIJNnCWiEdr3bn6IUYi15bNlnbCCU=
-github.com/terraprovider/go-msadmin v0.3.1 h1:N+BFpKrNSFE4OV7Ba+CNk6itybGFQlKVyohjS3dMAbs=
-github.com/terraprovider/go-msadmin v0.3.1/go.mod h1:2gcfNB6h7H4odo/5/k8GIwOtFkhbDEKrsfNfz/By/88=
+github.com/terraprovider/go-msadmin v0.3.2 h1:cwUVgcbCeC4mn6z3Hia0Z0gLrDuIT+w8b+6zozOEB8w=
+github.com/terraprovider/go-msadmin v0.3.2/go.mod h1:CkXa21tk46qthvZ+BB1p3PALlqH7ICCschVSXxS8ZAE=
 github.com/xyproto/randomstring v1.0.5 h1:YtlWPoRdgMu3NZtP45drfy1GKoojuR7hmRcnhZqKjWU=
 github.com/xyproto/randomstring v1.0.5/go.mod h1:rgmS5DeNXLivK7YprL0pY+lTuhNQW3iGxZ18UQApw/E=
 golang.org/x/crypto v0.54.0 h1:YLIA59K4fiNzHzjnZt2tUJQjQtUWfWbeHBqKtk3eScw=
