@@ -2,7 +2,7 @@ module github.com/terraprovider/go-spo
 
 go 1.26
 
-require github.com/terraprovider/go-msadmin v0.3.1
+require github.com/terraprovider/go-msadmin v0.3.2
 
 require (
 	github.com/AzureAD/microsoft-authentication-library-for-go v1.9.0 // indirect

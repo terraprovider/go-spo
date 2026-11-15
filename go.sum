@@ -10,8 +10,8 @@ github.com/kylelemons/godebug v1.1.0 h1:RPNrshWIDI6G2gRW9EHilWtl7Z6Sb1BR0xunSBf0
 github.com/kylelemons/godebug v1.1.0/go.mod h1:9/0rRGxNHcop5bhtWyNeEfOS8JIWk580+fNqagV/RAw=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c h1:+mdjkGKdHQG3305AYmdv1U2eRNDiU2ErMBj1gwrq8eQ=
 github.com/pkg/browser v0.0.0-20240102092130-5ac0b6a4141c/go.mod h1:7rwL4CYBLnjLxUqIJNnCWiEdr3bn6IUYi15bNlnbCCU=
-github.com/terraprovider/go-msadmin v0.3.1 h1:N+BFpKrNSFE4OV7Ba+CNk6itybGFQlKVyohjS3dMAbs=
-github.com/terraprovider/go-msadmin v0.3.1/go.mod h1:2gcfNB6h7H4odo/5/k8GIwOtFkhbDEKrsfNfz/By/88=
+github.com/terraprovider/go-msadmin v0.3.2 h1:cwUVgcbCeC4mn6z3Hia0Z0gLrDuIT+w8b+6zozOEB8w=
+github.com/terraprovider/go-msadmin v0.3.2/go.mod h1:CkXa21tk46qthvZ+BB1p3PALlqH7ICCschVSXxS8ZAE=
 github.com/xyproto/randomstring v1.0.5 h1:YtlWPoRdgMu3NZtP45drfy1GKoojuR7hmRcnhZqKjWU=
 github.com/xyproto/randomstring v1.0.5/go.mod h1:rgmS5DeNXLivK7YprL0pY+lTuhNQW3iGxZ18UQApw/E=
 golang.org/x/crypto v0.54.0 h1:YLIA59K4fiNzHzjnZt2tUJQjQtUWfWbeHBqKtk3eScw=
